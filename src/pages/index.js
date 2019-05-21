@@ -1,11 +1,13 @@
+import Header from "../components/Header";
+
 export default class extends React.Component {
   render() {
     return (
       <div className="Container">
-        <div className="items Header" >Header</div>
-        <div className="items Banner" >Foto</div>
-        <div className="items Jhurgen" >Mi info</div>
-        <div className="items Projects" >Mis proyectos</div>
+        <Header className="items Header" />
+        <div className="items Banner">Foto</div>
+        <div className="items Jhurgen">Mi info</div>
+        <div className="items Projects">Mis proyectos</div>
         <div className="items Certificates" />
         <div className="items Contacts" />
 
@@ -16,9 +18,12 @@ export default class extends React.Component {
             border: 1px solid red;
           }
           .Container {
-            background: white;
+            background: #eff0f4;
             display: grid;
-            grid-template: 100px 300px 400px 400px 400px 150px / repeat(3,minmax(200px,500px));
+            grid-template: 75px 300px 400px 400px 400px 150px / repeat(
+                3,
+                minmax(200px, 500px)
+              );
             grid-gap: 0px 0px;
 
             grid-template-areas:
@@ -29,28 +34,37 @@ export default class extends React.Component {
               "Certificates   Certificates    Certificates"
               "Contacts       Contacts        Contacts";
 
-            justify-content:center;
+            justify-content: center;
           }
-          .Header {
-            grid-area: Header;
-            background: Blue;
-          }
+
           .Banner {
+            background: #3186b2;
             grid-area: Banner;
           }
           .Jhurgen {
             grid-area: Jhurgen;
+            background: #0fc9e7;
           }
           .Projects {
             grid-area: Projects;
+            background: #fcfcfc;
           }
           .Certificates {
             grid-area: Certificates;
+            background: #429ffd;
           }
           .Contacts {
             grid-area: Contacts;
+            background: #2f4bff;
           }
         `}</style>
+
+        <style jsx global>{`
+            body{
+                font-family:Arial;
+                margin:0;
+            }
+            `}</style>
       </div>
     );
   }
