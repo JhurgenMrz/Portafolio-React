@@ -1,0 +1,27 @@
+{
+  "name": "Portafolio-React",
+  "version": "1.0.0",
+  "description": "Este es un repo en el que pruebo React creando un Portafolio e intentar meterle animaciones :O",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next ./src",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhurgenMrz/Portafolio-React.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhurgenMrz/Portafolio-React/issues"
+  },
+  "homepage": "https://github.com/JhurgenMrz/Portafolio-React#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
